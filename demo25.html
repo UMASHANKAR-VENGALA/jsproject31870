@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JAVASCRIPT-24</title>
+        <script>
+            //  Arrow function demo
+
+            document.writeln("<h2 align='center'><u>Demo on Arrow function </u></h2> </br>")
+
+           const sum = (a,b) => a+b
+           document.writeln("Sum =  "+sum(10.3,20.8))
+
+           const mul = (a,b) => {
+            let output = a*b
+            return output
+           }
+           document.writeln("Output =  "+mul(13,14))
+           document.writeln("</br>")
+
+           const status = (n) => {
+            if (n%2 == 0)
+            return true
+            else
+            return false
+           }
+
+           let n = 11
+           if (status(n))
+                document.writeln(n+" is Even")
+            else
+            document.writeln(n+" is Odd")
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

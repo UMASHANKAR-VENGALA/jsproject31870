@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>JAVASCRIPT-23</title>
+        <script>
+            //  demo
+
+            document.writeln("<h2 align='center'><u>Demo 23 </u></h2> </br>")
+            document.writeln("<h2 align='center'><u>Difference btw var / let / const </u></h2> </br>")
+
+            function demo1(){
+                document.writeln("I am in Demo - 1</br>")
+                {
+                    var a = 10
+                    document.writeln("Inside the block</br>")
+                    document.writeln("a = "+a+"</br>")
+                }
+                document.writeln("a = "+a+"</br></br>")
+            }
+            
+            function demo2(){
+                document.writeln("I am in Demo - 2</br>")
+                {
+                    let a = 10
+                    document.writeln("Inside the block</br>")
+                    document.writeln("a = "+a+"</br>")
+                }
+                document.writeln("a = "+a+"</br></br>")
+            }
+            
+            function demo3(){
+                document.writeln("I am in Demo - 3</br>")
+                {
+                    const a = 10
+                    document.writeln("Inside the block</br>")
+                    document.writeln("a = "+a+"</br>")
+                }
+                const a = 20
+                document.writeln("a = "+a+"</br></br>")
+            }
+            //demo1()
+            //demo2()
+            demo3()
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>JAVASCRIPT-28</title>
+        <script>
+            //  map object - key value pair
+
+            document.writeln("<h2 align='center'><u>Demo on Map  </u></h2> </br>")
+
+            const demomap = new Map()
+
+            demomap.set("id",123)
+            demomap.set("name","klu")
+            demomap.set("age",40.5)
+            demomap.set("status",false)
+            demomap.set("name","klef")  // duplicate key - klu will be updated as klef
+
+            document.writeln("Map size is : "+ demomap.size+"</br>")
+            document.writeln("Map type : "+ typeof demomap+"</br>")
+
+            document.writeln(demomap.get("id")+"</br>")
+            document.writeln(demomap.get("location")+"</br>")
+
+            document.writeln(demomap.has("id")+"</br>")          // has or not
+            document.writeln(demomap.has("location")+"</br>")
+
+            document.writeln("Deletion :  "+demomap.delete("status")+"</br>")   // delete a key
+            document.writeln("Map Size = "+demomap.size+"</br>")
+
+            document.writeln("<u>Display Map keys</u></br>")
+
+            for (let k of demomap.keys())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display Map Values</u></br>")
+
+            for (let v of demomap.values())
+            {
+                document.writeln(v)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display Map Values based on keys </u></br>")
+
+            for (let k of demomap.keys()){
+                document.writeln(demomap.get(k))
+            }
+            document.writeln("</br>")
+
+
+            document.writeln("<u>Display Map keys & Values </u></br>")
+
+            for (const [k,v] of demomap.entries()){
+                document.writeln(k + " : " + v + "</br>")
+            }
+            document.writeln("</br>")
+
+            demomap.clear()
+            document.writeln("Map size : "+demomap.size+"</br>")
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

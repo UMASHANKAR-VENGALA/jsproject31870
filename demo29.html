@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>JAVASCRIPT-29</title>
+        <script>
+            //  Map object - forEach method
+
+            document.writeln("<h2 align='center'><u>Demo on Map object - forEach method  </u></h2> </br>")
+
+            const mapobj1 = new Map()
+
+            mapobj1.set(1,"101")
+            mapobj1.set("id",1234)
+            mapobj1.set("name","klu")
+
+            document.writeln("Map Object 1 Size= "+mapobj1.size+"</br>") // display the map object
+
+            document.writeln("<u>Map object 1 Values</u></br>")
+
+            mapobj1.forEach((value) => document.writeln(value))
+
+            document.writeln("</br><u>Map object 1 Keys & Values</u></br>")
+
+            mapobj1.forEach((value,key) => {
+                document.writeln(key+" : "+value)
+            })
+
+            document.writeln("</br></br>")
+
+            const mapobj2 = new Map([ ["id",101] , ["name","uma" ]  ]) // parameterised constructor
+
+            document.writeln("Map Object 2 Size= "+mapobj2.size+"</br>") // display the map object
+
+            document.writeln("<u>Map object 2 Values</u></br>")
+            mapobj2.forEach((value) => document.writeln(value))
+
+            document.writeln("</br>")
+            document.writeln("<u>Map object 2 Keys & Values</u></br>")
+
+            const display = (v,k) => {
+                document.writeln(k+" : "+v)
+            }
+
+            mapobj2.forEach(display)  // using the callback by display arrow function
+
+            
+            
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

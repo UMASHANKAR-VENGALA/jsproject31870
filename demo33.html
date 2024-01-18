@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>JAVASCRIPT-33</title>
+        <script>
+            //  string methods
+
+            document.writeln("<h2 align='center'><u>Demo on string methods  </u></h2> </br>")
+
+            let txt = "kluniversity" // string
+            
+            document.writeln(`Text = ${txt}</br>`)
+            document.writeln("Length = "+txt.length+"</br>")
+            document.writeln(txt.concat(" cse")+"</br>")
+            document.writeln(txt.toUpperCase()+"</br>")
+            document.writeln(txt.toLowerCase()+"</br>")
+            document.writeln(txt.charAt(11)+"</br>") // index starts from 0 so // prints y
+            document.writeln(txt.substring(2,5)+"</br>")  // (start,end)
+            document.writeln(txt[3]+"</br>")
+            document.writeln(`${txt[4]},${txt[5]},${txt[14]}</br>`)
+            
+            document.writeln("<u>Display characters using for loop</u></br>")
+            for (const ch of txt){
+                document.writeln(ch)
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

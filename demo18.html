@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>JAVASCRIPT-18</title>
+        <script>
+            // Arrays
+            document.writeln("<h2 align='center'><u>Demo on Arrays </u></h2> </br>")
+            const a = [10,20,30] //same type of elements
+            document.writeln(a + "</br>")
+            document.writeln(typeof a + "</br>")
+            document.writeln(a.length + "</br>")
+            document.writeln(a[0] + "</br>")
+            document.writeln(a[1] + "</br>")
+            document.writeln(a[2] + "</br>")
+            document.writeln(a[5] + "</br>")
+            document.writeln(typeof a[0] + "</br>")
+            a[2] = "klu"
+            document.writeln(a + "</br>")
+            a[3] = "cse"
+            document.writeln(a + "</br>")
+            a.push(40)
+            a.push("mswd")
+
+            document.writeln(a + "</br>")
+            document.writeln(a.length + "</br>")
+            a.pop()
+            document.writeln(a + "</br>")
+            document.writeln(a.length + "</br>")
+
+            document.writeln(a.reverse()+"</br>")
+            document.writeln(a.sort()+"</br>")
+            document.writeln("Array: "+a+"</br>")
+
+            let element = a.shift()
+            document.writeln(element+"</br>")
+            document.writeln("After shifting: "+a+"</br>")
+
+            let len = a.unshift(10)
+            document.writeln(len+"</br>")
+            document.writeln("After unshifting: "+a+"</br>")
+
+            len = a.unshift("psqt","aws",143)
+            document.writeln(len+"</br>")
+            document.writeln("After unshifting: "+a+"</br>")
+
+            document.writeln("<u>Displaying Array elements using for loop</u> </br>")
+            for (let i = 0; i<a.length;i++){
+                document.writeln(a[i]+"</br>")
+            }
+
+            document.writeln("<u>Displaying Array elements using for in loop</u> </br>")
+            for (let i in a){
+                document.writeln(a[i]+"</br>")
+            }
+
+            document.writeln("<u>Displaying Array elements using for of loop</u> </br>")
+            for (let ele of a){
+                document.writeln(ele+"</br>")
+            }
+            
+        </script>
+    </head>
+    <body>
+         
+    </body>
+</html>
